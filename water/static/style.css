@@ -1,0 +1,24 @@
+header{
+  position: fixed;
+  width: 100vw;
+}
+#home,#about,#service,#more{
+  padding-top:20px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.logo{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  padding: 10px;
+}
+.contact{
+  justify-content: center;
+  width: 400px;
+  height: 600px;
+  padding-top:70px;
+  align-content:center;
+}

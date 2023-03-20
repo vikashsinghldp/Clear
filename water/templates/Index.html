@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <title>CLEAR: Pure Water</title>
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<header class="text-gray-400 bg-gray-900 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+      <a class="mr-5 hover:text-white" href="#home">Home</a>
+      <a class="mr-5 hover:text-white" href="#about">About</a>
+      <a class="mr-5 hover:text-white" href="#service">Services</a>
+      <a class="hover:text-white" href="#contact">Contact</a>
+    </nav>
+    <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl xl:block lg:hidden">Clear</span>
+    </a>
+   
+  </div>
+</header>
+<!--hero section -->
+<section id="home" class="text-gray-400 bg-gray-900 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Welcome To High
+        <br class="hidden lg:inline-block">Quality Water Services
+      </h1>
+      <p class="mb-8 leading-relaxed">A quality-intensive, value based refreshment company, committed to delighting its consumers with a healthy range of wholesome, fun filled products that are manufactured on state-of-the-art technologies.</p>
+      <div class="flex justify-center">
+        <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a href="#contact">Enquiry Now</a></button>
+
+      </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img class="object-cover object-center rounded" alt="hero" src="static/Images/img.jpg">
+    </div>
+  </div>
+</section>
+<section id="about" class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <h2 class="sm:text-3xl text-2xl text-white font-medium title-font mb-2 md:w-2/5">About Us</h2>
+    <div class="md:w-3/5 md:pl-6">
+      <p class="leading-relaxed text-base">Welcome to our mineral water company! We are passionate about providing our customers with high-quality, pure mineral water that is sourced from the most pristine locations around the world.
+
+Our company was founded on the belief that everyone deserves access to clean, refreshing water that is rich in essential minerals. We understand the importance of hydration and the role it plays in maintaining optimal health, and we are committed to delivering the best possible product to our customers.
+
+</p>
+      <div class="flex md:mt-4 mt-6">
+
+        <a href="#more" class="text-indigo-400 inline-flex items-center ml-4">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--service section-->
+<section id="more" class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">    <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+            <img class="object-cover object-center rounded logo" src="static/Images/logo3.jpg">
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+        <h2 class="text-white text-lg title-font font-medium mb-2">Fastest Service</h2>
+        <p class="leading-relaxed text-base">We provide the fastest delivery of water Bottle at your doorstep.</p>
+        <a href="#contact" class="mt-3 text-indigo-400 inline-flex items-center">CONTACT  NOW
+
+        </a>
+      </div>
+    </div>
+    <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-800 sm:flex-row flex-col">
+            <img class="object-cover object-center rounded logo" src="static/Images/logo2.jpeg">
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+             
+        <h2 class="text-white text-lg title-font font-medium mb-2">24*7 AVAILABLE</h2>
+        <p class="leading-relaxed text-base">We are available 24*7. Whenever you need us, we are just a call away.</p>
+        <a href="#contact" class="mt-3 text-indigo-400 inline-flex items-center">CONTACT US 
+
+        </a>
+      </div>
+
+    </div>
+    <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+      <img class="object-cover object-center rounded logo" src="static/Images/logo1.jpg">
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+        
+        <h2 class="text-white text-lg title-font font-medium mb-2">BEST WATER QUALITY</h2>
+        <p class="leading-relaxed text-base">We provides you safest and purest quality form water.</p>
+        <a href="#contact"class="mt-3 text-indigo-400 inline-flex items-center">CONTACT NOW
+
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--service section -->
+<section id="service" class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="static/Images/1.jpg">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">COMMERCIAL & INDUSTRIAL AREA</h2>
+        <p class="leading-relaxed text-base">We supply premium water bottles in commercial and industrial sectors. Busy schedule and hectic lifestyle.</p>
+        <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded"><a href="#contact">CONTACT NOW</a></button>
+      </div>
+      <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="static/Images/2.jpg">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">RESIDENTIAL AREA</h2>
+        <p class="leading-relaxed text-base">We provides premium drinking water which is 100 percent pure and safe. Children’s and women’s at home needs a special attention towards their health.</p>
+        <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded"><a href="#contact">CONTACT NOW</a></button>
+      </div>
+            <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="static/Images/3.jpg">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">MARRIAGE HALL</h2>
+        <p class="leading-relaxed text-base">Our products comes with different sizes for your different occasions. You can attract your guests with it because it contains all the goodness inside</p>
+        <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded"><a href="#contact">CONTACT NOW</a></button>
+      </div>
+                  <div class="sm:w-1/2 mb-10 px-4">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="static/Images/4.jpg">
+        </div>
+        <h2 class="title-font text-2xl font-medium text-white mt-6 mb-3">HOTELS & RESTURANT</h2>
+        <p class="leading-relaxed text-base">CLEAR is pure and safest drinking water. We provide CLEAR at every occasion and event at your doorstep.</p>
+        <button href="#contact" class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded"><a href="#contact">CONTACT NOW</a></button>
+      </div>
+    
+    </div>
+  </div>
+</section>
+<!--contact-->
+<section id="contact" class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Us</h1>
+      
+    </div>
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 w-1/2">
+          <form action="addrecord/" method="post">
+            {% csrf_token %}
+          <div>
+            <label for="name" class="leading-7 text-sm text-gray-400">Name</label>
+            <input type="text" id="name" name="name" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-1/2">
+          <div>
+            <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+            <input type="email" id="email" name="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-1/2">
+          <div>
+            <label for="phone" class="leading-7 text-sm text-gray-400">Phone</label>
+            <input type="text" id="phone" name="phone" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <div>
+            <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
+            <textarea id="message" name="message" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <button type="submit" value="submit" id="btn" onclick="func()" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+        </div>
+      </form>
+        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+          <a class="text-indigo-400">example@email.com</a>
+          <p class="leading-normal my-5">Goraul
+            <br>Vaishali, Bihar 844118
+          </p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer -->
+<footer class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">CLEAR</span>
+    </a>
+    <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2023 Clear
+    </p>
+   
+  </div>
+</footer>
+</body>
+<script src="index.js"></script>
+<script src= 
+
+    "https://smtpjs.com/v3/smtp.js"> 
+
+  </script> 
+
+  
+
+  <script type="text/javascript"> 
+ function func(){
+
+  alert("your request has been submitted");
+ }
+
+  </script> 
+</html>
